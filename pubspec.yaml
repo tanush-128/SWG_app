@@ -1,0 +1,67 @@
+name: student_welfare_app
+description: A new Flutter project.
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=3.0.6 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  go_router: 
+  flutter_lints: 
+  carousel_slider:
+  flutter_riverpod:
+  transparent_image:
+  google_fonts:
+  photo_view:
+  flutter_linkify: 
+  url_launcher:
+  swipeable_page_route:
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+ 
+
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/1.jpg
+    - assets/images/2.jpg
+    - assets/images/3.jpg
+    - assets/images/4.jpg
+    - assets/images/5.jpg
+    - assets/images/6.jpg
+    - assets/images/7.jpg
+    - assets/images/8.jpg
+    - assets/images/9.jpg
+
+
+    - assets/icons/school-material.png
+    - assets/icons/enterprise.png
+    - assets/icons/inspection.png
+    - assets/icons/mentor.png
+    - assets/icons/graduate-hat.png
+    - assets/icons/internship.png
+    - assets/icons/email.png
+    - assets/icons/population.png
+    - assets/SWG.png
+    - assets/welfare.png
+    - assets/icons/budget.png
+    - assets/icons/quantitative.png
+    - assets/icons/data-analysis.png
+    - assets/icons/software.png
+    - assets/icons/responsibility.png
+    - assets/icons/diet.png
+    - assets/icons/product-management.png
+    - assets/icons/question.png
+    - assets/icons/teacher.png
+    - assets/icons/professionals.png
+    - assets/icons/instagram.png
+    - assets/icons/facebook.png       
+    - assets/icons/gmail.png
+    - assets/department/aerospace.png
+  
+    

@@ -1,0 +1,58 @@
+import 'package:flutter/material.dart';
+import 'package:student_welfare_app/main.dart';
+import 'package:student_welfare_app/styles/button_style.dart';
+import 'package:student_welfare_app/styles/input_style.dart';
+import 'package:student_welfare_app/widgets/list_element.dart';
+import 'package:student_welfare_app/widgets/navbar.dart';
+import 'package:student_welfare_app/widgets/top.dart';
+
+class MentorMentee extends StatelessWidget {
+  const MentorMentee({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      // bottomNavigationBar: const CustomBottomNavigationBar(),
+      body: SafeArea(
+        child: Container(
+          // decoration: kBoxDecoration,
+          child: Column(
+            children: [
+              const Top(
+                  title: "mentor-mentee",
+                  desc:
+                      '"If you cannot see where you are going, ask someone who has been"'),
+              Row(
+                children: [
+                  Expanded(
+                      child: Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: TextField(
+                        decoration: kInputDecoration.copyWith(
+                      hintText: "Enter your Roll NO",
+                    )),
+                  )),
+                  // SizedBox(
+                  //   width: 10,
+                  // ),
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: ElevatedButton(
+                      style: kButtonStyle,
+                      onPressed: () {},
+                      child: const Padding(
+                        padding:
+                            EdgeInsets.symmetric(horizontal: 8, vertical: 20),
+                        child: Text("SEARCH"),
+                      ),
+                    ),
+                  )
+                ],
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}

@@ -52,16 +52,16 @@ class Top extends StatelessWidget {
                   color: Colors.white, borderRadius: BorderRadius.circular(12)),
               child: Column(
                 children: [
-                  Hero(
+                  const Hero(
                     tag: "logo",
-                    child: const Image(
+                    child: Image(
                         image: AssetImage(
                           "assets/SWG.png",
                         ),
                         height: 75),
                   ),
                   const Text(
-                    "Freshers.ORG",
+                    "Stuent Welfare Group",
                     style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                   ),
                   Padding(
@@ -70,6 +70,7 @@ class Top extends StatelessWidget {
                       child: Expanded(
                           child: Text(
                         desc,
+                        textAlign: TextAlign.center,
                         style: const TextStyle(
                             fontSize: 16, color: Colors.black54),
                       )),

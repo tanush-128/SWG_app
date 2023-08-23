@@ -48,7 +48,7 @@ final List<Info> infos = [
       title: "Socities of KGP",
       description: "List and Links of all socities/cells/research groups",
       imageUrl: "assets/icons/population.png",
-      path: '/'),
+      path: '/dev'),
   // const Info(
   //     id: "info7",
   //     title: "Fundae Docs",
@@ -61,13 +61,13 @@ final List<Info> infos = [
       title: "Academic Information",
       description: "Important Info about Scholorships and more",
       imageUrl: "assets/icons/graduate-hat.png",
-      path: '/'),
+      path: '/dev'),
   const Info(
       id: "info9",
       title: "Institute Email ID",
       description: "Know the benifits of Institute Email Id",
       imageUrl: "assets/icons/email.png",
-      path: '/'),
+      path: '/dev'),
 ];
 
 final List<Info> placements = [
@@ -76,19 +76,19 @@ final List<Info> placements = [
       title: "Software",
       description: "Devolopment, DSA and CP",
       imageUrl: "assets/icons/software.png",
-      path: '/'),
+      path: '/dev'),
   const Info(
       id: "p2",
       title: "Data Analysis",
       description: "DL,ML,NLP",
       imageUrl: "assets/icons/data-analysis.png",
-      path: '/'),
+      path: '/dev'),
   const Info(
       id: "p3",
       title: "Quant",
       description: "Mathematics, algebra, quantitative analysis",
       imageUrl: "assets/icons/quantitative.png",
-      path: '/'),
+      path: '/dev'),
   const Info(
       id: "p4",
       title: "Finance",

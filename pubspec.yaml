@@ -18,11 +18,18 @@ dependencies:
   photo_view:
   flutter_linkify: 
   url_launcher:
-  swipeable_page_route:
+  flutter_launcher_icons:
+  image_picker:
+  image_cropper:
 dev_dependencies:
   flutter_test:
     sdk: flutter
- 
+  
+flutter_launcher_icons:
+  android : true
+  ios : true
+  image_path : "assets/SWG.png"
+
 
 
 flutter:
@@ -63,5 +70,15 @@ flutter:
     - assets/icons/facebook.png       
     - assets/icons/gmail.png
     - assets/department/aerospace.png
-  
-    
+    - assets/department/agriculture.png
+    - assets/department/biotechnology.png 
+    - assets/department/chemistry.png
+    - assets/department/civil-engineering.png
+    - assets/department/computer-science.png
+    - assets/department/electrical.png
+    - assets/department/electronics.png    
+    - assets/department/geology.png
+    - assets/department/humanities.png
+    - assets/department/manufacturing.png
+    - assets/department/medical-laboratory.png    
+    - assets/department/scientific.png    

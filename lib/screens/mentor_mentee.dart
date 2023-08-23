@@ -24,14 +24,17 @@ class MentorMentee extends StatelessWidget {
                       '"If you cannot see where you are going, ask someone who has been"'),
               Row(
                 children: [
-                  Expanded(
-                      child: Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: TextField(
-                        decoration: kInputDecoration.copyWith(
-                      hintText: "Enter your Roll NO",
-                    )),
-                  )),
+                  const Expanded(
+                      child: kInput(
+                          label: "Enter your Roll NO", icon: Icons.search)),
+                  // Expanded(
+                  //     child: Padding(
+                  //   padding: const EdgeInsets.all(8.0),
+                  //   child: TextField(
+                  //       decoration: kInputDecoration.copyWith(
+                  //     hintText: "Enter your Roll NO",
+                  //   )),
+                  // )),
                   // SizedBox(
                   //   width: 10,
                   // ),
@@ -42,7 +45,7 @@ class MentorMentee extends StatelessWidget {
                       onPressed: () {},
                       child: const Padding(
                         padding:
-                            EdgeInsets.symmetric(horizontal: 8, vertical: 20),
+                            EdgeInsets.symmetric(horizontal: 0, vertical: 14),
                         child: Text("SEARCH"),
                       ),
                     ),

@@ -20,12 +20,15 @@ class Events extends StatelessWidget {
               Row(
                 children: [
                   Expanded(
-                      child: Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: TextField(
-                        decoration: kInputDecoration.copyWith(
-                            hintText: "Search a Event or Club")),
-                  )),
+                      child: kInput(
+                          label: "Search a Event or Club", icon: Icons.search)),
+                  // Expanded(
+                  //     child: Padding(
+                  //   padding: const EdgeInsets.all(8.0),
+                  //   child: TextField(
+                  //       decoration: kInputDecoration.copyWith(
+                  //           hintText: "Search a Event or Club")),
+                  // )),
                   // SizedBox(
                   //   width: 10,
                   // ),
@@ -36,7 +39,7 @@ class Events extends StatelessWidget {
                       onPressed: () {},
                       child: const Padding(
                         padding:
-                            EdgeInsets.symmetric(horizontal: 8, vertical: 20),
+                            EdgeInsets.symmetric(horizontal: 0, vertical: 14),
                         child: Text("SEARCH"),
                       ),
                     ),

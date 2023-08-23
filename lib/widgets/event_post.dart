@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_linkify/flutter_linkify.dart';
 import 'package:student_welfare_app/models/event.dart';
@@ -96,7 +98,6 @@ class _EventPostState extends State<EventPost>
                         style: const TextStyle(fontSize: 16),
                         linkStyle: TextStyle(color: kPrimaryColor),
                       ),
-                      
                     ],
                   ),
                 ],
@@ -141,12 +142,11 @@ class _EventPostState extends State<EventPost>
             clipBehavior: Clip.none,
             minScale: 1,
             maxScale: 1.5,
-            child: AspectRatio(
-              aspectRatio: 1,
-              child: Image(
-                image: AssetImage(widget.event.image_url),
-                fit: BoxFit.cover,
-              ),
+         
+            child: Image(
+              image: AssetImage(widget.event.image_url),
+              // image: FileImage(File(widget.event.image_url)),
+              fit: BoxFit.cover,
             ),
           ),
           Row(

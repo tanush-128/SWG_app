@@ -47,25 +47,13 @@ class LoginPage extends StatelessWidget {
                               fontSize: 20, fontWeight: FontWeight.w500),
                         ),
                       ),
-                      Padding(
-                        padding: const EdgeInsets.symmetric(
-                            vertical: 8, horizontal: 16),
-                        child: TextField(
-                          decoration: kInputDecoration.copyWith(
-                            hintText: "Enter Institute Email-ID",
-                            prefixIcon: const Icon(Icons.email_sharp),
-                          ),
-                        ),
+                      const kInput(
+                        label: "Enter Institute Email-ID",
+                        icon: Icons.email,
                       ),
-                      Padding(
-                        padding: const EdgeInsets.symmetric(
-                            vertical: 8, horizontal: 16),
-                        child: TextField(
-                          decoration: kInputDecoration.copyWith(
-                            hintText: "Enter OTP",
-                            prefixIcon: const Icon(Icons.password_sharp),
-                          ),
-                        ),
+                      const kInput(
+                        label: "Enter OTP",
+                        icon: Icons.password_sharp,
                       ),
                       ElevatedButton(
                           style: kButtonStyle,

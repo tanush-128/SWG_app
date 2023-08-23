@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:student_welfare_app/screens/add_event.dart';
 import 'package:student_welfare_app/screens/contact_us.dart';
 import 'package:student_welfare_app/screens/events.dart';
 import 'package:student_welfare_app/screens/home.dart';
@@ -9,6 +10,7 @@ import 'package:student_welfare_app/screens/login.dart';
 import 'package:student_welfare_app/screens/mentor_mentee.dart';
 import 'package:student_welfare_app/screens/pages.dart';
 import 'package:student_welfare_app/screens/study_Material.dart';
+import 'package:student_welfare_app/screens/under_dev.dart';
 
 final bool isLoggedIn = false;
 
@@ -21,10 +23,12 @@ GoRouter router = GoRouter(
     //   }
     // },
     initialLocation: '/login',
+    // initialLocation: '/add_event',
     routes: [
       GoRoute(
         path: '/',
         pageBuilder: (context, state) => MaterialPage(child: Pages()),
+        // pageBuilder: (context, state) => const MaterialPage(child: Splash()),
       ),
       GoRoute(
           path: '/study_material',
@@ -47,8 +51,16 @@ GoRouter router = GoRouter(
         pageBuilder: (context, state) => const MaterialPage(child: LoginPage()),
       ),
       GoRoute(
+        path: '/dev',
+        pageBuilder: (context, state) => const MaterialPage(child: UnderDev()),
+      ),
+      GoRoute(
         path: '/know_your_department',
         pageBuilder: (context, state) =>
             const MaterialPage(child: Departments()),
+      ),
+      GoRoute(
+        path: '/add_event',
+        pageBuilder: (context, state) => const MaterialPage(child: AddEvent()),
       ),
     ]);

@@ -3,7 +3,7 @@ import 'package:go_router/go_router.dart';
 import 'package:student_welfare_app/models/info.dart';
 import 'package:transparent_image/transparent_image.dart';
 
-class InfoTile extends StatefulWidget {
+class InfoTile extends StatefulWidget { 
   const InfoTile({super.key, required this.info});
   final Info info;
 
@@ -19,7 +19,7 @@ class _InfoTileState extends State<InfoTile> {
         context.push(widget.info.path);
       },
       child: Padding(
-        padding: const EdgeInsets.all(4.0),
+        padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
         child: Card(
           elevation: 2,
           shape: RoundedRectangleBorder(

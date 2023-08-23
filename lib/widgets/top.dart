@@ -61,7 +61,7 @@ class Top extends StatelessWidget {
                         height: 75),
                   ),
                   const Text(
-                    "Student Welfare Group",
+                    "Freshers.ORG",
                     style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                   ),
                   Padding(

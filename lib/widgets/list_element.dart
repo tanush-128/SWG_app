@@ -16,7 +16,7 @@ class ListElement extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.all(4.0),
         child: Card(
-          elevation: 5,
+          elevation: 2,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(12),
           ),

@@ -22,9 +22,13 @@ class Home extends StatelessWidget {
                 // color: Colors.blue,
                 decoration: BoxDecoration(
                     color: kPrimaryColor,
-                    borderRadius: BorderRadius.vertical(
-                        bottom: Radius.elliptical(
-                            MediaQuery.of(context).size.width, 200))),
+                    borderRadius:
+                        BorderRadius.vertical(bottom: Radius.circular(60))
+                    // borderRadius: BorderRadius.vertical(
+                    //   bottom: Radius.elliptical(
+                    //       MediaQuery.of(context).size.width, 200),
+                    // ),
+                    ),
                 width: double.infinity,
                 child: Padding(
                   padding: const EdgeInsets.fromLTRB(16, 8, 0, 10),
@@ -34,14 +38,11 @@ class Home extends StatelessWidget {
                       children: [
                         // ),
                         const Card(
-                          child: Hero(
-                            tag: "logo",
-                            child: Image(
-                                image: AssetImage(
-                                  "assets/SWG.png",
-                                ),
-                                height: 85),
-                          ),
+                          child: Image(
+                              image: AssetImage(
+                                "assets/SWG.png",
+                              ),
+                              height: 85),
                         ),
                         Padding(
                           padding: const EdgeInsets.only(top: 0),

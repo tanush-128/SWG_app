@@ -21,9 +21,9 @@ class _InfoTileState extends State<InfoTile> {
       child: Padding(
         padding: const EdgeInsets.all(4.0),
         child: Card(
-          elevation: 5,
+          elevation: 2,
           shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(12),
+            borderRadius: BorderRadius.circular(8),
           ),
           child: SizedBox(
             height: 50,

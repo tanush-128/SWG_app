@@ -1,5 +1,3 @@
-import 'package:flutter/material.dart';
-
 class Data {
   Data(
       {required this.title,

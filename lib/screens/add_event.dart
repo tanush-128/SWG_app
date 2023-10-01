@@ -26,11 +26,11 @@ class _AddEventState extends State<AddEvent> {
       appBar: AppBar(
         backgroundColor: kPrimaryColor,
         leading: IconButton(
-          icon: Icon(Icons.close),
+          icon: const Icon(Icons.close),
           onPressed: () {},
         ),
         actions: [],
-        title: Text("Add an Event"),
+        title: const Text("Add an Event"),
       ),
       body: SafeArea(
           child: SingleChildScrollView(
@@ -112,8 +112,8 @@ class _AddEventState extends State<AddEvent> {
             ),
             ElevatedButton(
               onPressed: () {},
-              child: Text("Add Event"),
               style: kButtonStyle,
+              child: const Text("Add Event"),
             )
           ],
         ),

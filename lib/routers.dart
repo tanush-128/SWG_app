@@ -22,8 +22,8 @@ GoRouter router = GoRouter(
     //     return '/login';
     //   }
     // },
-    initialLocation: '/login',
-    // initialLocation: '/add_event',
+    // initialLocation: '/login',
+    initialLocation: '/add_event',
     routes: [
       GoRoute(
         path: '/',

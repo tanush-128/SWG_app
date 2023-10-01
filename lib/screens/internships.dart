@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:student_welfare_app/main.dart';
 import 'package:student_welfare_app/widgets/infoTile.dart';
-import 'package:student_welfare_app/widgets/navbar.dart';
 import 'package:student_welfare_app/models/info.dart';
 import 'package:student_welfare_app/widgets/top.dart';
 
@@ -11,7 +9,6 @@ class Internships extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // bottomNavigationBar: const CustomBottomNavigationBar(),
       body: SafeArea(
         child: SingleChildScrollView(
           child: Container(

@@ -3,7 +3,6 @@ import 'package:student_welfare_app/models/info.dart';
 import 'package:student_welfare_app/styles/colors.dart';
 import 'package:student_welfare_app/widgets/carousel.dart';
 import 'package:student_welfare_app/widgets/infoTile.dart';
-import 'package:student_welfare_app/widgets/navbar.dart';
 
 class Home extends StatelessWidget {
   const Home({super.key});
@@ -19,16 +18,10 @@ class Home extends StatelessWidget {
             Stack(children: [
               Container(
                 height: 275,
-                // color: Colors.blue,
                 decoration: BoxDecoration(
                     color: kPrimaryColor,
-                    borderRadius:
-                        BorderRadius.vertical(bottom: Radius.circular(60))
-                    // borderRadius: BorderRadius.vertical(
-                    //   bottom: Radius.elliptical(
-                    //       MediaQuery.of(context).size.width, 200),
-                    // ),
-                    ),
+                    borderRadius: const BorderRadius.vertical(
+                        bottom: Radius.circular(60))),
                 width: double.infinity,
                 child: Padding(
                   padding: const EdgeInsets.fromLTRB(16, 8, 0, 10),

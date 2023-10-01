@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:student_welfare_app/models/info.dart';
 import 'package:student_welfare_app/styles/colors.dart';
 import 'package:student_welfare_app/widgets/infoTile.dart';
-import 'package:student_welfare_app/widgets/navbar.dart';
 import 'package:student_welfare_app/widgets/top.dart';
 
 class ContactUs extends StatelessWidget {

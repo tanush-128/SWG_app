@@ -11,27 +11,15 @@ class Events extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // bottomNavigationBar:
-      //     const Hero(tag: "navbar", child: CustomBottomNavigationBar()),
       body: SafeArea(
         child: SingleChildScrollView(
           child: Column(
             children: [
               Row(
                 children: [
-                  Expanded(
+                  const Expanded(
                       child: kInput(
                           label: "Search a Event or Club", icon: Icons.search)),
-                  // Expanded(
-                  //     child: Padding(
-                  //   padding: const EdgeInsets.all(8.0),
-                  //   child: TextField(
-                  //       decoration: kInputDecoration.copyWith(
-                  //           hintText: "Search a Event or Club")),
-                  // )),
-                  // SizedBox(
-                  //   width: 10,
-                  // ),
                   Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: ElevatedButton(

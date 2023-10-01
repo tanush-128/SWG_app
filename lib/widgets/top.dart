@@ -19,9 +19,10 @@ class Top extends StatelessWidget {
         // color: Colors.blue,
         decoration: BoxDecoration(
             color: kPrimaryColor,
-            borderRadius: BorderRadius.vertical(
-                bottom:
-                    Radius.elliptical(MediaQuery.of(context).size.width, 80))),
+            borderRadius: BorderRadius.vertical(bottom: Radius.circular(60))
+            // borderRadius: BorderRadius.vertical(
+            //     bottom: Radius.elliptical(MediaQuery.of(context).size.width, 80)),
+            ),
         width: double.infinity,
         child: Padding(
           padding: const EdgeInsets.fromLTRB(16, 20, 0, 10),
@@ -61,7 +62,7 @@ class Top extends StatelessWidget {
                         height: 75),
                   ),
                   const Text(
-                    "Stuent Welfare Group",
+                    "Student Welfare Group",
                     style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                   ),
                   Padding(

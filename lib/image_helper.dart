@@ -7,12 +7,13 @@ class ImageHelper {
   final ImageCropper imageCropper;
   final ImagePicker imagePicker;
 
-  Future<XFile> pickImage(
+  Future pickImage(
       {ImageSource source = ImageSource.gallery,
       int ImageQuality = 100}) async {
     final file =
         await imagePicker.pickImage(source: source, imageQuality: ImageQuality);
-    return file!;
+
+    return file;
   }
 
   Future<CroppedFile?> crop(

@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:student_welfare_app/models/data.dart';
 import 'package:student_welfare_app/widgets/data_tile.dart';
 import 'package:student_welfare_app/widgets/top.dart';
-import 'package:student_welfare_app/models/data.dart';
 
 class Departments extends StatelessWidget {
   const Departments({super.key});

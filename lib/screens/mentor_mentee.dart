@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:student_welfare_app/main.dart';
 import 'package:student_welfare_app/styles/button_style.dart';
 import 'package:student_welfare_app/styles/input_style.dart';
-import 'package:student_welfare_app/widgets/list_element.dart';
-import 'package:student_welfare_app/widgets/navbar.dart';
 import 'package:student_welfare_app/widgets/top.dart';
 
 class MentorMentee extends StatelessWidget {
@@ -27,17 +24,6 @@ class MentorMentee extends StatelessWidget {
                   const Expanded(
                       child: kInput(
                           label: "Enter your Roll NO", icon: Icons.search)),
-                  // Expanded(
-                  //     child: Padding(
-                  //   padding: const EdgeInsets.all(8.0),
-                  //   child: TextField(
-                  //       decoration: kInputDecoration.copyWith(
-                  //     hintText: "Enter your Roll NO",
-                  //   )),
-                  // )),
-                  // SizedBox(
-                  //   width: 10,
-                  // ),
                   Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: ElevatedButton(

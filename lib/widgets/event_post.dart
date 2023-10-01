@@ -1,4 +1,3 @@
-import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_linkify/flutter_linkify.dart';
@@ -26,7 +25,6 @@ class _EventPostState extends State<EventPost>
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     controller = TransformationController();
     animationController = AnimationController(
@@ -59,7 +57,6 @@ class _EventPostState extends State<EventPost>
       context: context,
       builder: (context) {
         return Container(
-          // height: MediaQuery.of(context).size.height / 2,
           child: SingleChildScrollView(
             child: Padding(
               padding: const EdgeInsets.all(16.0),
@@ -111,75 +108,72 @@ class _EventPostState extends State<EventPost>
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Column(
-        children: [
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Row(
-              children: [
-                const Padding(
-                  padding: EdgeInsets.all(8.0),
-                  child: Icon(Icons.event),
-                ),
-                Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Text(
-                    widget.event.association_name,
-                    style: const TextStyle(
-                        fontSize: 18, fontWeight: FontWeight.w500),
-                  ),
-                ),
-              ],
-            ),
-          ),
-          InteractiveViewer(
-            transformationController: controller,
-            onInteractionEnd: (details) {
-              resetAnimation();
-            },
-            panEnabled: false,
-            clipBehavior: Clip.none,
-            minScale: 1,
-            maxScale: 1.5,
-         
-            child: Image(
-              image: AssetImage(widget.event.image_url),
-              // image: FileImage(File(widget.event.image_url)),
-              fit: BoxFit.cover,
-            ),
-          ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+    return Column(
+      children: [
+        Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Row(
             children: [
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: TextButton(
-                    onPressed: () {
-                      details();
-                    },
-                    child: Text(
-                      "Details",
-                      style: TextStyle(fontSize: 16, color: kPrimaryColor),
-                    )),
+              const Padding(
+                padding: EdgeInsets.all(8.0),
+                child: Icon(Icons.event),
               ),
               Padding(
                 padding: const EdgeInsets.all(8.0),
-                child: ElevatedButton(
-                  onPressed: () {},
-                  child: const Text("JOIN"),
-                  style: kButtonStyle,
+                child: Text(
+                  widget.event.association_name,
+                  style: const TextStyle(
+                      fontSize: 18, fontWeight: FontWeight.w500),
                 ),
               ),
             ],
           ),
-          const Divider(
-            indent: 10,
-            endIndent: 10,
-            thickness: 2,
-          )
-        ],
-      ),
+        ),
+        InteractiveViewer(
+          transformationController: controller,
+          onInteractionEnd: (details) {
+            resetAnimation();
+          },
+          panEnabled: false,
+          clipBehavior: Clip.none,
+          minScale: 1,
+          maxScale: 1.5,
+          child: Image(
+            image: AssetImage(widget.event.image_url),
+            // image: FileImage(File(widget.event.image_url)),
+            fit: BoxFit.cover,
+          ),
+        ),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: TextButton(
+                  onPressed: () {
+                    details();
+                  },
+                  child: Text(
+                    "Details",
+                    style: TextStyle(fontSize: 16, color: kPrimaryColor),
+                  )),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: ElevatedButton(
+                onPressed: () {},
+                style: kButtonStyle,
+                child: const Text("JOIN"),
+              ),
+            ),
+          ],
+        ),
+        const Divider(
+          indent: 10,
+          endIndent: 10,
+          thickness: 2,
+        )
+      ],
     );
   }
 }
